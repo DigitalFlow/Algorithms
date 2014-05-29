@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgorithmImplementations.Searching
+namespace Algorithms.Searching
 {
 	public class BinarySearch
 	{

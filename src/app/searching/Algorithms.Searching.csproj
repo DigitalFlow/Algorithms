@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AlgorithmImplementations.Searching</RootNamespace>
-    <AssemblyName>Algorithm-Implementations.Searching</AssemblyName>
+    <RootNamespace>Algorithms.Searching</RootNamespace>
+    <AssemblyName>Algorithms.Searching</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

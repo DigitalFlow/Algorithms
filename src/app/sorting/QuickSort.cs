@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Sorting
+namespace Algorithms.Sorting
 {
 	public class QuickSort<T> where T : IComparable
 	{

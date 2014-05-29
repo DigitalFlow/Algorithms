@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Sorting", "src\app\sorting\Algorithm-Implementations.Sorting.csproj", "{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting", "src\app\sorting\Algorithms.Sorting.csproj", "{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Searching", "src\app\searching\Algorithm-Implementations.Searching.csproj", "{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Searching", "src\app\searching\Algorithms.Searching.csproj", "{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Searching.Tests", "src\test\searching_test\Algorithm-Implementations.Searching.Tests.csproj", "{C62B4AE8-676D-4606-9033-E52793742D0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Searching.Tests", "src\test\searching_test\Algorithms.Searching.Tests.csproj", "{C62B4AE8-676D-4606-9033-E52793742D0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Sorting.Tests", "src\test\sorting_test\Algorithm-Implementations.Sorting.Tests.csproj", "{54FEE324-6DF9-4046-8CFE-620FF0F674E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting.Tests", "src\test\sorting_test\Algorithms.Sorting.Tests.csproj", "{54FEE324-6DF9-4046-8CFE-620FF0F674E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

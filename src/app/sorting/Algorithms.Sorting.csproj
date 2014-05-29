@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AlgorithmImplementations.Sorting</RootNamespace>
-    <AssemblyName>AlgorithmImplementations.Sorting</AssemblyName>
+    <RootNamespace>Algorithms.Sorting</RootNamespace>
+    <AssemblyName>Algorithms.Sorting</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

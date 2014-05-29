@@ -4,7 +4,7 @@
 open Fake
 
 // Our project meta information
-let projectname = "Algorithm-Implementations"
+let projectname = "Algorithms"
 let authors = ["Florian Kroenert"]
 
 // Versioning
@@ -24,7 +24,7 @@ let appDeployDir = deployDir + "/app"
 
 
 Target "Clean" (fun _ ->
-    CleanDirs [buildDir; testDir]
+    CleanDirs [buildDir; deployDir; testDir]
 )
 
 Target "UpdateVersions" (fun _ ->
