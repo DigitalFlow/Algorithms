@@ -12,11 +12,11 @@ let mutable version = "1.0.0"
 let mutable infVersion = "1.0.0"
 
 // Directories for building the project
-let buildDir = ".build"
+let buildDir = "build"
 let appBuildDir = buildDir + "/app"
 
 // Directory for building the test projects
-let testDir = ".test"
+let testDir = "test"
 
 // Directories for publishing our build artifacts
 let deployDir = "Publish"
@@ -47,6 +47,7 @@ Target "Publish" (fun _ ->
 
 // Targets will be executed from top to bottom
 "Clean"
+=?> ("UpdateVersions", not isLocalBuild)
 ==> "BuildApp"
 ==> "Publish"
 

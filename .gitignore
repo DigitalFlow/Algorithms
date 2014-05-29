@@ -8,7 +8,8 @@
 
 # Non source folders
 [Dd]debug/
-.[Bb]uild/
+[Bb]uild/
+[Tt]est/
 [Pp]ublish/
 [Rr]elease/
 [Oo]bj/
