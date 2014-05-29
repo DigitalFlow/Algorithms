@@ -1,0 +1,15 @@
+# Non source files
+*.suo
+*.exe
+*.vssscc
+*.vspscc
+*.userprefs
+.directory
+
+# Non source folders
+[Dd]debug/
+.[Bb]uild/
+[Pp]ublish/
+[Rr]elease/
+[Oo]bj/
+tools/

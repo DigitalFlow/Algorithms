@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Sorting", "src\app\sorting\Algorithm-Implementations.Sorting.csproj", "{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Searching", "src\app\searching\Algorithm-Implementations.Searching.csproj", "{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Searching.Tests", "src\test\searching_test\Algorithm-Implementations.Searching.Tests.csproj", "{C62B4AE8-676D-4606-9033-E52793742D0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm-Implementations.Sorting.Tests", "src\test\sorting_test\Algorithm-Implementations.Sorting.Tests.csproj", "{54FEE324-6DF9-4046-8CFE-620FF0F674E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54FEE324-6DF9-4046-8CFE-620FF0F674E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FEE324-6DF9-4046-8CFE-620FF0F674E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FEE324-6DF9-4046-8CFE-620FF0F674E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FEE324-6DF9-4046-8CFE-620FF0F674E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E5E9E3-6739-4219-A210-AD6A7EAEA0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B16FCA-4B2D-4CA6-BA57-BCD5B3520CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62B4AE8-676D-4606-9033-E52793742D0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62B4AE8-676D-4606-9033-E52793742D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62B4AE8-676D-4606-9033-E52793742D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62B4AE8-676D-4606-9033-E52793742D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\app\sorting\Algorithm-Implementations.Sorting.csproj
+	EndGlobalSection
+EndGlobal
