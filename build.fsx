@@ -27,6 +27,10 @@ Target "Clean" (fun _ ->
     CleanDirs [buildDir; deployDir; testDir]
 )
 
+Target "RestoreNuget" (fun _ ->
+    RestorePackages()
+)
+
 Target "UpdateVersions" (fun _ ->
     BulkReplaceAssemblyInfoVersions "src/" (fun f ->
       {f with
@@ -40,6 +44,24 @@ Target "BuildApp" (fun _ ->
       |> Log "Build Log: "
 )
 
+Target "BuildTest" (fun _ ->
+    !!("src/test/**/*.csproj")
+      |> MSBuildDebug testDir "Build"
+      |> Log "Build Log: "
+)
+
+Target "NUnit" (fun _ ->
+    let testFiles = !!(testDir @@ "/**/*.Tests.dll")
+    if testFiles.Includes.Length <> 0 then
+      testFiles
+        |> NUnit (fun test ->
+             {test with
+                   ToolPath = "tools/NUnit.Runners/tools";
+                   Framework = "4.5"
+                   DisableShadowCopy = true;
+                   OutputFile = testDir + "NUnitResults.xml"})
+)
+
 Target "Publish" (fun _ ->
     !!(appBuildDir @@ "/**/*.dll")
       |> CopyTo appDeployDir
@@ -47,8 +69,11 @@ Target "Publish" (fun _ ->
 
 // Targets will be executed from top to bottom
 "Clean"
+==> "RestoreNuget"
 =?> ("UpdateVersions", not isLocalBuild)
 ==> "BuildApp"
+==> "BuildTest"
+==> "NUnit"
 ==> "Publish"
 
 // Run build

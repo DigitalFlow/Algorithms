@@ -5,6 +5,7 @@
 *.vspscc
 *.userprefs
 .directory
+testNUnitResults.xml
 
 # Non source folders
 [Dd]debug/
@@ -14,3 +15,5 @@
 [Rr]elease/
 [Oo]bj/
 tools/
+[Pp]ackages/
+[Bb]in/

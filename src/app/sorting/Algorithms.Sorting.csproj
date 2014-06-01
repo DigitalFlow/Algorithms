@@ -33,8 +33,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuickSort.cs" />
     <Compile Include="MergeSort.cs" />
+    <Compile Include="QuickSort\QuickSort.cs" />
+    <Compile Include="QuickSort\QuickSortFirstElementPivot.cs" />
+    <Compile Include="QuickSort\QuickSortRandomPivot.cs" />
+    <Compile Include="QuickSort\QuickSortMedianOfThreePivot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="QuickSort\" />
+  </ItemGroup>
 </Project>
