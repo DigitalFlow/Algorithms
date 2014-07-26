@@ -1,4 +1,2 @@
 #!/bin/bash
-mono tools/NuGet/nuget.exe install FAKE -OutputDirectory tools -ExcludeVersion
-mono tools/NuGet/nuget.exe install Nunit.Runners -OutputDirectory tools -ExcludeVersion
-mono tools/FAKE/tools/FAKE.exe build.fsx
+mono --runtime=v4.0.30319 tools/FAKE/tools/FAKE.exe build.fsx

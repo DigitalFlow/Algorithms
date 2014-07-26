@@ -40,7 +40,7 @@ Target "UpdateVersions" (fun _ ->
 
 Target "BuildApp" (fun _ ->
     !!("src/app/**/*.csproj")
-      |> MSBuildRelease appBuildDir "Build" 
+      |> MSBuildDebug appBuildDir "Build" 
       |> Log "Build Log: "
 )
 
@@ -50,16 +50,17 @@ Target "BuildTest" (fun _ ->
       |> Log "Build Log: "
 )
 
-Target "NUnit" (fun _ ->
+Target "Test" (fun _ ->
     let testFiles = !!(testDir @@ "/**/*.Tests.dll")
     if testFiles.Includes.Length <> 0 then
       testFiles
-        |> NUnit (fun test ->
+        |> xUnit (fun test ->
              {test with
-                   ToolPath = "tools/NUnit.Runners/tools";
-                   Framework = "4.5"
-                   DisableShadowCopy = true;
-                   OutputFile = testDir + "NUnitResults.xml"})
+                   OutputDir = testDir;
+                   ToolPath = "--runtime=v4.0.30319 --debug tools/xunit.runners/tools/xunit.console.clr4.exe";
+                   ShadowCopy = false;
+                   Verbose = true;
+                   XmlOutput = false})
 )
 
 Target "Publish" (fun _ ->
@@ -73,7 +74,7 @@ Target "Publish" (fun _ ->
 =?> ("UpdateVersions", not isLocalBuild)
 ==> "BuildApp"
 ==> "BuildTest"
-==> "NUnit"
+==> "Test"
 ==> "Publish"
 
 // Run build
